@@ -6,8 +6,8 @@ export default function Home() {
     <div>
       <div className="flex flex-col items-center justify-center">
         <div className="container  m-4">
-          <div className="max-w-3xl w-full mx-auto grid gap-4 grid-cols-1">
-            <div className="flex flex-col top-0 z-10">
+          <div className="max-w-4xl w-full mx-auto grid gap-4 grid-cols-1">
+            <div className="flex flex-col top-0">
               <div className="bg-gray-800 border border-gray-900 shadow-lg  rounded-2xl p-4">
                 <div className="flex-none sm:flex">
                   <div className="relative sm:mb-0 mb-3">
@@ -454,18 +454,10 @@ export default function Home() {
                   <div className="p-5 flex-auto">
                     <div className="text-md text-gray-400 px-4">
                       <ul className="list-none md:list-disc">
-                        <li>
-                          Scalio
-                        </li>
-                        <li>
-                          FutureRx
-                        </li>
-                        <li>
-                          Mobiquity
-                        </li>
-                        <li>
-                          Altimetrik
-                        </li>
+                        <li>Scalio</li>
+                        <li>FutureRx</li>
+                        <li>Mobiquity</li>
+                        <li>Altimetrik</li>
                         <li>Globant</li>
                       </ul>
                     </div>
