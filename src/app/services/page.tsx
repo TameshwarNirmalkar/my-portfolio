@@ -1,6 +1,12 @@
+import type { Metadata } from "next";
 import CardInfo from "@/components/CardInfo";
 import Image from "next/image";
 // import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Services",
+  description: "Blockchain, web3, eatharem, metamask",
+};
 
 export default function Services() {
   return (
