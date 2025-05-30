@@ -18,7 +18,10 @@ export default function PricePage() {
               <div className="shadow-gray-400 rounded-xl bg-gray-800">
                 <div className="p-4">
                   <h5 className="text-orange-400 text-2xl">Hourly Basis</h5>
-                  <h1 className="text-5xl text-gray-200 py-3">$15/hr</h1>
+                  <h1 className=" text-gray-200 py-3">
+                    <span className="text-2xl">$</span>
+                    <span className="text-5xl">15/hr</span>
+                  </h1>
                   <div className="p-4">
                     <ul className="text-gray-400 list-disc list-outside">
                       <li>Carefully crafted components</li>
@@ -36,7 +39,10 @@ export default function PricePage() {
               <div className="shadow-gray-400 rounded-xl bg-gray-800">
                 <div className="p-4">
                   <h5 className="text-orange-400 text-2xl">Part Time</h5>
-                  <h1 className="text-5xl text-gray-200 py-3">$56/4hr</h1>
+                  <h1 className=" text-gray-200 py-3">
+                    <span className="text-2xl">$</span>
+                    <span className="text-5xl">56/4hr</span>
+                  </h1>
                   <div className="p-4">
                     <ul className="text-gray-400 list-disc list-outside">
                       <li>Carefully crafted components</li>
@@ -54,7 +60,10 @@ export default function PricePage() {
               <div className="shadow-gray-400 rounded-xl bg-gray-800">
                 <div className="p-4">
                   <h5 className="text-orange-400 text-2xl">Permanent</h5>
-                  <h1 className="text-5xl text-gray-200 py-3">$3000/Year</h1>
+                  <h1 className=" text-gray-200 py-3">
+                    <span className="text-2xl">$</span>
+                    <span className="text-5xl">3000/Year</span>
+                  </h1>
                   <div className="p-4">
                     <ul className="text-gray-400 list-disc list-outside">
                       <li>Carefully crafted components</li>

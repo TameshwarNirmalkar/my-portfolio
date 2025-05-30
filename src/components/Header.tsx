@@ -33,8 +33,8 @@ const HeaderComponent: React.FC = () => {
     },
     {
       id: 5,
-      nav_label: "Contacts",
-      nav_link: "/contacts",
+      nav_label: "Contact",
+      nav_link: "/contact",
     },
   ];
   return (
