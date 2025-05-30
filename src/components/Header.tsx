@@ -1,37 +1,68 @@
 import Link from "next/link";
 import { memo } from "react";
 import Image from "next/image";
+import ActiveInactiveLink from "./ActiveInactiveLink";
 
-const HeaderComponent = () => {
+interface HomeNavI {
+  nav_label: string;
+  nav_link: string;
+  id: number;
+}
+
+const HeaderComponent: React.FC = () => {
+  const navLinkData: Array<HomeNavI> = [
+    {
+      id: 1,
+      nav_label: "Home",
+      nav_link: "/",
+    },
+    {
+      id: 2,
+      nav_label: "Services",
+      nav_link: "/services",
+    },
+    {
+      id: 3,
+      nav_label: "Pricing",
+      nav_link: "/pricing",
+    },
+    {
+      id: 4,
+      nav_label: "Testimonials",
+      nav_link: "/testimonials",
+    },
+    {
+      id: 5,
+      nav_label: "Contacts",
+      nav_link: "/contacts",
+    },
+  ];
   return (
     <header className="header sticky top-0 shadow-md flex items-center justify-between px-8 py-02 z-15 bg-gray-900">
       <h1 className="w-3/12">
         <Link href="/" className="block relative">
-          <Image alt="profile image" src="/assets/images/ai-image1.jpeg" width={30} height={30} className="rounded-full object-none object-[59%]" />
+          <Image
+            alt="profile image"
+            src="/assets/images/ai-image1.jpeg"
+            width={30}
+            height={30}
+            className="rounded-full object-none object-[59%]"
+          />
         </Link>
       </h1>
 
       <nav className="nav font-semibold text-md text-gray-400">
         <ul className="flex items-center">
-          <li className="p-4 border-opacity-0 hover:border-opacity-100 hover:text-orange-400 duration-200 cursor-pointer active">
-            <Link href="/">Home</Link>
-          </li>
-          <li className="p-4 border-opacity-0 hover:border-opacity-100 hover:text-orange-400 duration-200 cursor-pointer">
-            <Link href="/services">Services</Link>
-          </li>
-          <li className="p-4 border-opacity-0 hover:border-opacity-100 hover:text-orange-400 duration-200 cursor-pointer">
-            <Link href="pricing">Pricing</Link>
-          </li>
-          <li className="p-4 border-opacity-0 hover:border-opacity-100 hover:text-orange-400 duration-200 cursor-pointer">
-            <Link href="/testimonials">Testimonials</Link>
-          </li>
-          <li className="p-4 border-opacity-0 hover:border-opacity-100 hover:text-orange-400 duration-200 cursor-pointer">
-            <Link href="/contact">Contact</Link>
-          </li>
+          {navLinkData.map(({ id, nav_label, nav_link }) => (
+            <li
+              key={id}
+              className="p-4 border-opacity-0 hover:border-opacity-100 hover:text-orange-400 duration-200 cursor-pointer"
+            >
+              <ActiveInactiveLink nav_label={nav_label} nav_link={nav_link} />
+            </li>
+          ))}
         </ul>
       </nav>
-
-     
     </header>
 
     // <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
