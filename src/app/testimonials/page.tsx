@@ -32,7 +32,7 @@ export default function TestimonialsPage() {
                         width={100}
                         height={100}
                         className="img-circle"
-                        src="/assets/images/rotating_card_profile.png"
+                        src="/assets/images/ai-image1.jpeg"
                       />
                     </div>
                     <div className="content">
@@ -121,7 +121,7 @@ export default function TestimonialsPage() {
                         width={40}
                         height={40}
                         className="img-circle"
-                        src="/assets/images/rotating_card_profile.png"
+                        src="/assets/images/ai-image1.jpeg"
                       />
                     </div>
                     <div className="content">
@@ -211,7 +211,7 @@ export default function TestimonialsPage() {
                         width={100}
                         height={100}
                         className="img-circle"
-                        src="/assets/images/rotating_card_profile.png"
+                        src="/assets/images/ai-image1.jpeg"
                       />
                     </div>
                     <div className="content">

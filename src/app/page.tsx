@@ -452,106 +452,96 @@ export default function Home() {
               <div className="flex flex-col p-4 relative justify-center bg-gray-800 border border-gray-800 shadow-lg  rounded-2xl">
                 <div className="">
                   <div className="p-5 flex-auto">
-                    <div className="text-md text-gray-400 px-4">
-                      <ul className="list-none md:list-disc">
-                        <li>Scalio</li>
-                        <li>FutureRx</li>
-                        <li>Mobiquity</li>
-                        <li>Altimetrik</li>
-                        <li>Globant</li>
-                      </ul>
+                    <div className="text-md text-gray-400">
+                      <table className="table-auto w-full">
+                        <thead>
+                          <tr className="text-left">
+                            <th>Company</th>
+                            <th>Tenure</th>
+                            <th>Company Website</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Scalio</td>
+                            <td>2022 - 2023</td>
+                            <td>
+                              <Link href={"https://scal.io/"} target="_blank">
+                                https://scal.io/
+                              </Link>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>FutureRx</td>
+                            <td>2021 - 2022</td>
+                            <td>
+                              <Link
+                                href={"https://futurerx.com/"}
+                                target="_blank"
+                              >
+                                https://futurerx.com/
+                              </Link>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Mobiquity - Hexaware</td>
+                            <td>2019 - 2021</td>
+                            <td>
+                              <Link
+                                href={"https://hexaware.com/"}
+                                target="_blank"
+                              >
+                                https://hexaware.com/
+                              </Link>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Altimetrik</td>
+                            <td>2017 - 2019</td>
+                            <td>
+                              <Link
+                                href={"https://www.altimetrik.com/"}
+                                target="_blank"
+                              >
+                                https://www.altimetrik.com/
+                              </Link>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
                   </div>
-                  {/* <div className="p-3  mt-2 text-center space-x-4 md:block">
-                    <button className="mb-2 md:mb-0 bg-gray-700 px-5 py-2 text-sm shadow-sm font-medium tracking-wider border-2 border-gray-600 hover:border-gray-700 text-gray-300 rounded-full hover:shadow-lg hover:bg-gray-800 transition ease-in duration-300">
-                      Cancel
-                    </button>
-                    <button className="bg-orange-400 hover:bg-orange-500 px-5 ml-4 py-2 text-sm shadow-sm hover:shadow-lg font-medium tracking-wider border-2 border-orange-300 hover:border-orange-500 text-white rounded-full transition ease-in duration-300">
-                      Confirm
-                    </button>
-                  </div> */}
                 </div>
               </div>
+            </div>
 
-              {/* Hidden */}
-              <div className="flex flex-col justify-center p-4 bg-gray-800 border-gray-800 shadow-md hover:shodow-lg rounded-2xl hidden">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center">
-                    <div className="flex flex-col">
-                      <div className="font-medium leading-none text-gray-100">
-                        Delete Your Acccount?
-                      </div>
-                      <p className="text-sm text-gray-500 leading-none mt-1">
-                        By deleting your account.
-                      </p>
-                    </div>
-                  </div>
-                  <a className="flex-no-shrink text-xs  font-medium tracking-wider  text-gray-400 hover:text-green-400 transition ease-in duration-300">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              {/* Hidden */}
-              <div className="flex flex-col p-4 bg-gray-800 border-gray-800 shadow-md hover:shodow-lg rounded-2xl hidden">
-                <div className="flex">
-                  <Image
-                    src="https://images.unsplash.com/photo-1575390730294-dfc5efa5250b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=255&q=80"
-                    alt="Just a flower"
-                    width={16}
-                    height={16}
-                    className=" w-16  object-fit  h-16 rounded-2xl"
-                  />
-                  <div className="flex flex-col justify-center w-full px-2 py-1">
-                    <div className="flex justify-between items-center ">
-                      <div className="flex flex-col">
-                        <h2 className="font-medium leading-none text-gray-100">
-                          Massive Dynamic
-                        </h2>
-                      </div>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-5 w-5 text-gray-400 hover:text-green-400 cursor-pointer"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"
-                        ></path>
-                      </svg>
-                    </div>
-                    <div className="flex pt-2  text-sm text-gray-500">
-                      <div className="flex items-center mr-auto">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          className="h-5 w-5 text-yellow-400 mr-1"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                        </svg>
-                        <p className="font-normal">4.5</p>
-                      </div>
-                      <div className="flex items-center font-medium text-gray-300 ">
-                        $1800
-                        <span className="text-gray-600 text-sm font-normal">
-                          {" "}
-                          /wk
-                        </span>
-                      </div>
+            {/* Education Section */}
+            <div className="grid grid-cols-1 ">
+              <h1 className="text-2xl font-bold py-2 text-gray-200">
+                Qualification
+              </h1>
+              <div className="flex flex-col p-1 relative justify-center bg-gray-800 border border-gray-800 shadow-lg  rounded-2xl">
+                <div className="">
+                  <div className="p-5 flex-auto">
+                    <div className="text-md text-gray-400">
+                      <table className="table-auto w-full">
+                        <thead>
+                          <tr className="text-left">
+                            <th>Degree</th>
+                            <th>Specialized</th>
+                            <th>Year</th>
+                            <th>%/Grade</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>B.C.A (Bachelor of Computer Application)</td>
+                            <td>Artificial Inteligence</td>
+                            <td>2008 - 2011</td>
+                            <td>B</td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
                   </div>
                 </div>

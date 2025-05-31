@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { memo } from "react";
 import Image from "next/image";
+import { Josefin_Sans } from "next/font/google";
 import ActiveInactiveLink from "./ActiveInactiveLink";
 
 interface HomeNavI {
@@ -8,6 +9,12 @@ interface HomeNavI {
   nav_link: string;
   id: number;
 }
+
+const josefinSans = Josefin_Sans({
+  weight: ["200", "700"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+});
 
 const HeaderComponent: React.FC = () => {
   const navLinkData: Array<HomeNavI> = [
@@ -38,7 +45,9 @@ const HeaderComponent: React.FC = () => {
     },
   ];
   return (
-    <header className="header sticky top-0 shadow-md flex items-center justify-between px-8 py-02 z-15 bg-gray-900">
+    <header
+      className={`${josefinSans.className} header sticky top-0 shadow-md flex items-center justify-between px-8 py-02 z-15 bg-gray-900`}
+    >
       <h1 className="w-3/12">
         <Link href="/" className="block relative">
           <Image
@@ -51,7 +60,7 @@ const HeaderComponent: React.FC = () => {
         </Link>
       </h1>
 
-      <nav className="nav font-semibold text-md text-gray-400">
+      <nav className="nav text-lg text-gray-400">
         <ul className="flex items-center">
           {navLinkData.map(({ id, nav_label, nav_link }) => (
             <li
