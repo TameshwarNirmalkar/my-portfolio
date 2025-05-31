@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
   experimental: {
     useCache: true,
     viewTransition: true,
-    useLightningcss: true,
+    useLightningcss: false,
   },
   compress: false,
   generateEtags: true,
