@@ -73,7 +73,7 @@ const HeaderComponent: React.FC = () => {
           {navLinkData.map(({ id, nav_label, nav_link }, i: number) => (
             <li
               key={id}
-              className={`animate__faster animate__delay-${i}s p-4 border-opacity-0 hover:border-opacity-100 hover:text-orange-400 duration-200 cursor-pointer animate__animated animate__fadeInDown`}
+              className={`animate__delay-0.8s p-4 border-opacity-0 hover:border-opacity-100 hover:text-orange-400 duration-200 cursor-pointer animate__animated animate__fadeInDown`}
             >
               <ActiveInactiveLink nav_label={nav_label} nav_link={nav_link} />
             </li>
