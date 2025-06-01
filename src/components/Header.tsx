@@ -25,21 +25,26 @@ const HeaderComponent: React.FC = () => {
     },
     {
       id: 2,
+      nav_label: "About Me",
+      nav_link: "/my-details",
+    },
+    {
+      id: 3,
       nav_label: "Services",
       nav_link: "/services",
     },
     {
-      id: 3,
+      id: 4,
       nav_label: "Pricing",
       nav_link: "/pricing",
     },
     {
-      id: 4,
+      id: 5,
       nav_label: "Testimonials",
       nav_link: "/testimonials",
     },
     {
-      id: 5,
+      id: 6,
       nav_label: "Contact",
       nav_link: "/contact",
     },
@@ -49,7 +54,10 @@ const HeaderComponent: React.FC = () => {
       className={`${josefinSans.className} header sticky top-0 shadow-md flex items-center justify-between px-8 py-02 z-15 bg-gray-900`}
     >
       <h1 className="w-3/12">
-        <Link href="/" className="block relative">
+        <Link
+          href="/"
+          className="block relative animate__animated animate__fadeInDown"
+        >
           <Image
             alt="profile image"
             src="/assets/images/ai-image1.jpeg"
@@ -62,10 +70,10 @@ const HeaderComponent: React.FC = () => {
 
       <nav className="nav text-lg text-gray-400">
         <ul className="flex items-center">
-          {navLinkData.map(({ id, nav_label, nav_link }) => (
+          {navLinkData.map(({ id, nav_label, nav_link }, i: number) => (
             <li
               key={id}
-              className="p-4 border-opacity-0 hover:border-opacity-100 hover:text-orange-400 duration-200 cursor-pointer"
+              className={`animate__faster animate__delay-${i}s p-4 border-opacity-0 hover:border-opacity-100 hover:text-orange-400 duration-200 cursor-pointer animate__animated animate__fadeInDown`}
             >
               <ActiveInactiveLink nav_label={nav_label} nav_link={nav_link} />
             </li>

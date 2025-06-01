@@ -7,9 +7,14 @@ import React, { memo } from "react";
 interface ActiveNavI {
   nav_label: string;
   nav_link: string;
+  css_name?: string;
 }
 
-const ActiveInactiveLink: React.FC<ActiveNavI> = ({ nav_label, nav_link }) => {
+const ActiveInactiveLink: React.FC<ActiveNavI> = ({
+  nav_label,
+  nav_link,
+  css_name,
+}) => {
   const pathname = usePathname();
   const isActive =
     pathname === nav_link ||
@@ -17,7 +22,7 @@ const ActiveInactiveLink: React.FC<ActiveNavI> = ({ nav_label, nav_link }) => {
   return (
     <Link
       href={nav_link}
-      className={isActive ? "text-orange-400" : "text-white"}
+      className={`${isActive ? "text-orange-400" : "text-white"} ${css_name}`}
     >
       {nav_label}
     </Link>

@@ -32,7 +32,7 @@ export default function RootLayout({
       <body className={`antialiased bg-gray-900`}>
         <HeaderComponent />
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );
