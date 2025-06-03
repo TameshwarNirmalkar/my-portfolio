@@ -44,12 +44,13 @@ export default function Home() {
 
               <div className="text-gray-400">
                 <div className="animate__animated animate__slideInUp">
-                  As a frontend developer, my primary responsibility is to build
-                  the user interface (UI) and user experience (UX) of websites
-                  and web applications. This involves using HTML, CSS, and
-                  JavaScript to create visually appealing and interactive
-                  elements that users directly engage with. I ensure the
-                  interface is responsive, accessible, and easy to navigate.
+                  <span className="text-4xl">F</span>rontend developer, my
+                  primary responsibility is to build the user interface (UI) and
+                  user experience (UX) of websites and web applications. This
+                  involves using HTML, CSS, and JavaScript to create visually
+                  appealing and interactive elements that users directly engage
+                  with. I ensure the interface is responsive, accessible, and
+                  easy to navigate.
                 </div>
                 {/* <div className="animate__animated animate__slideInUp">
                   UI/UX, MERN, MEAN Developer
