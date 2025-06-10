@@ -1,5 +1,6 @@
 {
     "editor.formatOnSave": true,
     "eslint.codeActionsOnSave.rules": null,
-    "prettier.printWidth": 120
+    "prettier.printWidth": 120,
+    "terminal.integrated.fontFamily": "MesloLGS NF"
 }

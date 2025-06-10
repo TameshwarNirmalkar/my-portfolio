@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Comments from "@/components/Comments";
 import CommentsCard from "@components/CommentsCard";
 

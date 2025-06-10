@@ -32,6 +32,9 @@
       ],
       "@store/*": [
         "./src/redux/*"
+      ],
+      "@theme/*": [
+        "./src/theme/*"
       ]
     }
   },

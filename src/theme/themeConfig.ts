@@ -1,0 +1,89 @@
+import { type ThemeConfig, theme } from "antd";
+
+const themeConfig: ThemeConfig = {
+  algorithm: theme.darkAlgorithm,
+  token: {
+    colorPrimaryBorder: "#ff8904",
+    colorTextBase: "#999",
+    // colorText: "#999",
+    colorLink: "#ff8904",
+    colorBorder: "#64748b",
+    borderRadius: 6,
+    colorBgElevated: "#18181b",
+    controlItemBgHover: "#64748b",
+    colorTextDisabled: "#64748b",
+    boxShadowTertiary: "none",
+    colorInfoBg: "#0ea5e9",
+    colorInfoBorder: "#0ea5e9",
+    colorSuccessBg: "#22c55e",
+    colorSuccessBorder: "#16a34a",
+    colorWarningBg: "#eab308",
+    colorWarningBorder: "#ca8a04",
+    colorErrorBg: "#b91c1c",
+    colorErrorBorder: "#b91c1c",
+    colorErrorText: "#ffffff",
+    colorIcon: "#cbd5e1",
+    colorSplit: " #cbd5e1",
+    colorBgMask: "#d8ebff61",
+    colorTextQuaternary: "#e2e8f0", // --------- dropdown default text color,
+    colorTextPlaceholder: "#e4e4e7",
+    colorTextLabel: "#ffffff",
+  },
+  components: {
+    Button: {
+      algorithm: true,
+      defaultActiveBorderColor: "rgb(250,173,20)",
+      defaultActiveColor: "rgb(250,173,20)",
+      colorPrimary: "#ff8904",
+      primaryShadow: "none",
+      boxShadow: "none",
+      dangerShadow: "none",
+      colorBorder: "none",
+    },
+    Layout: {
+      bodyBg: "#1e293b",
+      triggerBg: "#64748b",
+      // siderBg: '#64748b',
+      headerPadding: "0px 5px",
+    },
+    Menu: {
+      darkItemHoverBg: "#64748b",
+      darkItemSelectedBg: "#64748b",
+      // darkItemSelectedColor: 'rgb(250 204 21)'
+    },
+    Table: {
+      headerBg: "#64748b",
+      borderColor: "#64748b",
+      footerBg: "#64748b",
+    },
+    Pagination: {
+      itemBg: "#18181b",
+      itemActiveBg: "#64748b",
+    },
+    Input: {
+      activeBorderColor: "#64748b",
+      activeShadow: "none",
+      colorText: "#444444",
+    },
+    Card: {
+      colorBorder: "#64748b",
+      borderRadius: 50,
+      actionsBg: "#1e293b",
+    },
+    DatePicker: {
+      // activeBorderColor: '#f59e0b',
+      // activeBg: '#f59e0b',
+      cellHoverBg: "#f59e0b",
+      cellActiveWithRangeBg: "#f59e0b",
+      cellHoverWithRangeBg: "#f59e0b",
+    },
+    Select: {
+      selectorBg: "#334155",
+      optionActiveBg: "#64748b",
+      optionSelectedBg: "#64748b",
+      optionSelectedColor: "#e2e8f0",
+    },
+  },
+};
+
+export default themeConfig;

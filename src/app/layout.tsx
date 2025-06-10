@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import { Geist_Mono } from "next/font/google";
+import { AntdRegistry } from "@ant-design/nextjs-registry";
+import "@fortawesome/fontawesome-svg-core/styles.css";
 import "../styles/globals.css";
 import "../styles/rotating-card.css";
-import "@fortawesome/fontawesome-svg-core/styles.css";
-
+import "@ant-design/v5-patch-for-react-19";
+import { App, ConfigProvider } from "antd";
+import themeConfig from "@theme/themeConfig";
 import { StoreProviders } from "../redux/providers";
-
 import HeaderComponent from "@/components/Header";
 //import Footer from "@/components/Footer";
 
@@ -29,9 +31,15 @@ export default function RootLayout({
       {/* ${geistSans.variable} ${geistMono.variable} */}
       <body className={`antialiased bg-gray-900`}>
         <StoreProviders>
-          <HeaderComponent />
-          {children}
-          {/* <Footer /> */}
+          <AntdRegistry>
+            <ConfigProvider theme={themeConfig} button={{ autoInsertSpace: false }}>
+              <App>
+                <HeaderComponent />
+                {children}
+                {/* <Footer /> */}
+              </App>
+            </ConfigProvider>
+          </AntdRegistry>
         </StoreProviders>
       </body>
     </html>
