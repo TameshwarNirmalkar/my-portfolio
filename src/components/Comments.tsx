@@ -11,17 +11,14 @@ type FieldType = {
 
 const { TextArea } = Input;
 
-const Comments: React.FC = () => {
+const Comments: React.FC<{ onFinishHandler: (e: FieldType) => void }> = ({ onFinishHandler }) => {
   const onFinish: FormProps<FieldType>["onFinish"] = (values) => {
-    console.log("Success:", values);
+    onFinishHandler(values);
   };
-
-  // const onFinishFailed: FormProps<FieldType>["onFinishFailed"] = (errorInfo) => {
-  //   console.log("Failed:", errorInfo);
-  // };
 
   return (
     <div>
+      {/* {JSON.stringify(allComments)} */}
       <Form
         name="basic"
         layout="vertical"

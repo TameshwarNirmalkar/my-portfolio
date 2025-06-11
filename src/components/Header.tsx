@@ -54,10 +54,7 @@ const HeaderComponent: React.FC = () => {
       className={`${josefinSans.className} header sticky top-0 shadow-md flex items-center justify-between px-8 py-02 z-15 bg-gray-900`}
     >
       <h1 className="w-3/12">
-        <Link
-          href="/"
-          className="block relative animate__animated animate__fadeInDown"
-        >
+        <Link href="/" className="block relative animate__animated animate__fadeInDown">
           <Image
             alt="profile image"
             src="/assets/images/ai-image1.jpeg"
@@ -70,7 +67,7 @@ const HeaderComponent: React.FC = () => {
 
       <nav className="nav text-lg text-gray-400">
         <ul className="flex items-center">
-          {navLinkData.map(({ id, nav_label, nav_link }, i: number) => (
+          {navLinkData.map(({ id, nav_label, nav_link }) => (
             <li
               key={id}
               className={`animate__delay-0.8s p-4 border-opacity-0 hover:border-opacity-100 hover:text-orange-400 duration-200 cursor-pointer animate__animated animate__fadeInDown`}

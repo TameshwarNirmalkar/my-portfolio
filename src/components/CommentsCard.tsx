@@ -4,9 +4,11 @@ import Image from "next/image";
 interface CommentsCardI {
   coverImage: string;
   profleImage: string;
+  email: string;
+  comments: string;
 }
 
-const CommentsCard: React.FC<CommentsCardI> = ({ coverImage, profleImage }) => {
+const CommentsCard: React.FC<CommentsCardI> = ({ coverImage, profleImage, email, comments }) => {
   return (
     <div className="flex-2">
       <div className="card-container">
@@ -16,17 +18,14 @@ const CommentsCard: React.FC<CommentsCardI> = ({ coverImage, profleImage }) => {
               <Image src={coverImage} width={100} height={100} alt="back thumnails" />
             </div>
             <div className="user">
-              <Image alt="circle image" width={100} height={100} className="rounded-full" src={profleImage} />
+              <Image alt="circle image" width={100} height={100} className="rounded-full" src={profleImage} priority />
             </div>
             <div className="content">
               <div className="main">
                 <h3 className="name">Inna Corman</h3>
-                <p className="profession">Product Manager</p>
+                <p className="profession">{email}</p>
 
-                <p className="text-center">
-                  &apos;I&rsquo;m the new Sinatra, and since I made it here I can make it anywhere, yeah, they love me
-                  everywhere&apos;
-                </p>
+                <p className="text-center">{comments}</p>
               </div>
               {/* <div className="footer">
                           <div className="rating">

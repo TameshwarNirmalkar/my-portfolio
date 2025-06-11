@@ -43,13 +43,11 @@ const themeConfig: ThemeConfig = {
     Layout: {
       bodyBg: "#1e293b",
       triggerBg: "#64748b",
-      // siderBg: '#64748b',
       headerPadding: "0px 5px",
     },
     Menu: {
       darkItemHoverBg: "#64748b",
       darkItemSelectedBg: "#64748b",
-      // darkItemSelectedColor: 'rgb(250 204 21)'
     },
     Table: {
       headerBg: "#64748b",
@@ -71,8 +69,6 @@ const themeConfig: ThemeConfig = {
       actionsBg: "#1e293b",
     },
     DatePicker: {
-      // activeBorderColor: '#f59e0b',
-      // activeBg: '#f59e0b',
       cellHoverBg: "#f59e0b",
       cellActiveWithRangeBg: "#f59e0b",
       cellHoverWithRangeBg: "#f59e0b",
