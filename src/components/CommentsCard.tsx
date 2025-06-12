@@ -2,14 +2,14 @@ import React, { memo } from "react";
 import Image from "next/image";
 
 interface CommentsCardI {
-  coverImage: string;
+  // coverImage: string;
   profleImage: string;
   email: string;
   comments: string;
   client_name: string;
 }
 
-const CommentsCard: React.FC<CommentsCardI> = ({ coverImage, profleImage, email, comments, client_name }) => {
+const CommentsCard: React.FC<CommentsCardI> = ({ profleImage, email, comments, client_name }) => {
   return (
     <div className="">
       <div className="card-container">

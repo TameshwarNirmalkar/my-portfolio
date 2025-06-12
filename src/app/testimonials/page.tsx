@@ -44,7 +44,7 @@ export default function TestimonialsPage() {
             {allComments.map((com) => (
               <CommentsCard
                 key={com._id}
-                coverImage="/assets/images/rotating_card_thumb2.png"
+                // coverImage="/assets/images/rotating_card_thumb2.png"
                 profleImage="/assets/images/ai-image1.jpeg"
                 email={com.email}
                 comments={com.comments}
