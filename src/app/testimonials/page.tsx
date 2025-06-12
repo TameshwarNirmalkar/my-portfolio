@@ -9,6 +9,7 @@ import { useAppSelector, useAppDispatch } from "@store/hooks";
 import { getCommentsCollectionAction } from "@store/comments/actions";
 import { App } from "antd";
 import { createCommentsCollectionAction } from "@store/comments/actions";
+import { Spin } from "antd";
 
 // const metadata: Metadata = {
 //   title: "Testimonials",
@@ -18,6 +19,7 @@ import { createCommentsCollectionAction } from "@store/comments/actions";
 export default function TestimonialsPage() {
   const dispatch = useAppDispatch();
   const allComments = useAppSelector(commentsSelectors.selectAll);
+  const is_loading = useAppSelector((state) => state.comments.is_loading);
   const { message } = App.useApp();
 
   useEffect(() => {
@@ -25,7 +27,7 @@ export default function TestimonialsPage() {
   }, [dispatch, message]);
 
   const onFinish = useCallback(
-    async (values: { email: string; comments: string }) => {
+    async (values: { email: string; comments: string; client_name: string }) => {
       await dispatch(createCommentsCollectionAction(values));
       message.open({
         type: "success",
@@ -40,18 +42,25 @@ export default function TestimonialsPage() {
       <div className="container mx-auto">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-2xl text-gray-300 py-4">Testimonials</h1>
-          <div className="grid grid-cols-3 gap-4">
-            {allComments.map((com) => (
-              <CommentsCard
-                key={com._id}
-                // coverImage="/assets/images/rotating_card_thumb2.png"
-                profleImage="/assets/images/ai-image1.jpeg"
-                email={com.email}
-                comments={com.comments}
-                client_name={com.client_name}
-              />
-            ))}
-          </div>
+
+          {is_loading ? (
+            <div className="flex justify-center p-5">
+              <Spin size="large" />
+            </div>
+          ) : (
+            <div className="grid grid-cols-3 gap-4">
+              {allComments.map((com) => (
+                <CommentsCard
+                  key={com._id}
+                  // coverImage="/assets/images/rotating_card_thumb2.png"
+                  profleImage="/assets/images/ai-image1.jpeg"
+                  email={com.email}
+                  comments={com.comments}
+                  client_name={com.client_name}
+                />
+              ))}
+            </div>
+          )}
           <Comments onFinishHandler={onFinish} />
         </div>
       </div>

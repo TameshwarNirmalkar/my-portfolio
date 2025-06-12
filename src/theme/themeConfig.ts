@@ -9,6 +9,7 @@ const themeConfig: ThemeConfig = {
     colorTextBase: "#999",
     colorLink: "#ff6900",
     colorLinkActive: "ff8909",
+    colorPrimary: "#ff6900",
     // colorBgElevated: "#18181b",
     // colorText: "#999",
     // colorBorder: "#64748b",
