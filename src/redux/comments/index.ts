@@ -49,7 +49,6 @@ const commentSlice = createSlice({
         createCommentsCollectionAction.fulfilled,
         (state, action: PayloadAction<{ data: CommentsCollectionI }>) => {
           state.is_loading = false;
-          console.log("=============", action.payload);
           commentsAdapter.addOne(state, action.payload.data);
         }
       );

@@ -12,15 +12,18 @@ type FieldType = {
 const { TextArea } = Input;
 
 const Comments: React.FC<{ onFinishHandler: (e: FieldType) => void }> = ({ onFinishHandler }) => {
+  const [commentForm] = Form.useForm();
+
   const onFinish: FormProps<FieldType>["onFinish"] = (values) => {
     onFinishHandler(values);
+    commentForm.resetFields();
   };
 
   return (
     <div>
-      {/* {JSON.stringify(allComments)} */}
       <Form
-        name="basic"
+        form={commentForm}
+        name="commentForm"
         layout="vertical"
         labelCol={{ span: 24 }}
         wrapperCol={{ span: 24 }}

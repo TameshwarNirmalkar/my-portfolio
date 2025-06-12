@@ -10,69 +10,35 @@ interface CommentsCardI {
 
 const CommentsCard: React.FC<CommentsCardI> = ({ coverImage, profleImage, email, comments }) => {
   return (
-    <div className="flex-2">
+    <div className="">
       <div className="card-container">
         <div className="card">
           <div className="front">
-            <div className="cover">
-              <Image src={coverImage} width={100} height={100} alt="back thumnails" />
-            </div>
-            <div className="user">
-              <Image alt="circle image" width={100} height={100} className="rounded-full" src={profleImage} priority />
-            </div>
-            <div className="content">
-              <div className="main">
-                <h3 className="name">Inna Corman</h3>
-                <p className="profession">{email}</p>
-
-                <p className="text-center">{comments}</p>
+            <div className="cover gradientBg py-3 rounded-t-1xl">
+              {/* <Image src={coverImage} width={100} height={100} alt="back thumnails" /> */}
+              <div className="flex justify-center items-center">
+                <Image
+                  alt="circle image"
+                  width={100}
+                  height={100}
+                  className="rounded-full border-2 border-white shadow-2xl"
+                  src={profleImage}
+                  priority
+                />
               </div>
-              {/* <div className="footer">
-                          <div className="rating">
-                            <i className="fa fa-mail-forward"></i> Auto Rotation
-                          </div>
-                        </div> */}
+            </div>
+
+            <div className="grid grid-cols-1 break-words">
+              <div className="p-4">
+                <h3 className="text-2xl text-black-500 text-center">Client Name</h3>
+                <div className="text-orange-600 text-center">{email}</div>
+                <div>{comments}</div>
+              </div>
             </div>
           </div>
 
-          <div className="back">
-            <div className="header">
-              <h5 className="motto">To be or not to be, this is my awesome motto!</h5>
-            </div>
-            <div className="content">
-              <div className="main">
-                <h4 className="text-center">Job Description</h4>
-                <p className="text-center">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...</p>
-
-                <div className="stats-container">
-                  <div className="stats">
-                    <h4>235</h4>
-                    <p>Followers</p>
-                  </div>
-                  <div className="stats">
-                    <h4>114</h4>
-                    <p>Following</p>
-                  </div>
-                  <div className="stats">
-                    <h4>35</h4>
-                    <p>Projects</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="footer">
-              <div className="social-links text-center">
-                <a href="https://creative-tim.com" className="facebook">
-                  <i className="fa fa-facebook fa-fw"></i>
-                </a>
-                <a href="https://creative-tim.com" className="google">
-                  <i className="fa fa-google-plus fa-fw"></i>
-                </a>
-                <a href="https://creative-tim.com" className="twitter">
-                  <i className="fa fa-twitter fa-fw"></i>
-                </a>
-              </div>
-            </div>
+          <div className="back gradientBg">
+            <div></div>
           </div>
         </div>
       </div>
