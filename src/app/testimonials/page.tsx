@@ -2,7 +2,7 @@
 
 // import type { Metadata } from "next";
 import React, { useEffect, useCallback } from "react";
-import Comments from "@/components/Comments";
+import Comments from "@components/Comments";
 import CommentsCard from "@components/CommentsCard";
 import { commentsSelectors } from "@store/comments/index";
 import { useAppSelector, useAppDispatch } from "@store/hooks";
