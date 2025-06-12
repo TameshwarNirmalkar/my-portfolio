@@ -15,7 +15,6 @@
   transform: rotateY(180deg);
 }
 
-.card-container.static:hover .card,
 .card-container.static.hover .card {
   -webkit-transform: none;
   -moz-transform: none;

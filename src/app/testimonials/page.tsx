@@ -18,10 +18,7 @@ const metadata: Metadata = {
 export default function TestimonialsPage() {
   const dispatch = useAppDispatch();
   const allComments = useAppSelector(commentsSelectors.selectAll);
-  // console.log("allcomments ======", commentsSelectors);
   const { message } = App.useApp();
-
-  // const [messageApi, contextHolder] = message.useMessage();
 
   useEffect(() => {
     dispatch(getCommentsCollectionAction());
@@ -51,6 +48,7 @@ export default function TestimonialsPage() {
                 profleImage="/assets/images/ai-image1.jpeg"
                 email={com.email}
                 comments={com.comments}
+                client_name={com.client_name}
               />
             ))}
           </div>

@@ -7,7 +7,7 @@ const themeConfig: ThemeConfig = {
     // boxShadowTertiary: "none",
     colorPrimaryBorder: "#ff8904",
     colorTextBase: "#999",
-    colorLink: "#ff8904",
+    colorLink: "#ff6900",
     colorLinkActive: "ff8909",
     // colorBgElevated: "#18181b",
     // colorText: "#999",

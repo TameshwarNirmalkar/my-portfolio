@@ -6,6 +6,7 @@ interface CommentsCollectionI {
   _id: string;
   email: string;
   comments: string;
+  client_name: string;
 }
 
 interface CommentsStateI {

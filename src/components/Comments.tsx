@@ -5,6 +5,7 @@ import type { FormProps } from "antd";
 import { Button, Form, Input } from "antd";
 
 type FieldType = {
+  client_name: string;
   email: string;
   comments: string;
 };
@@ -32,6 +33,14 @@ const Comments: React.FC<{ onFinishHandler: (e: FieldType) => void }> = ({ onFin
         // onFinishFailed={onFinishFailed}
         autoComplete="off"
       >
+        <Form.Item<FieldType>
+          label="Full Name"
+          name="client_name"
+          rules={[{ required: true, message: "Please enter your name!" }]}
+        >
+          <Input />
+        </Form.Item>
+
         <Form.Item<FieldType>
           label="Email"
           name="email"
