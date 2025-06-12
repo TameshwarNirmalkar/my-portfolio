@@ -1,6 +1,6 @@
 "use client";
 
-import type { Metadata } from "next";
+// import type { Metadata } from "next";
 import React, { useEffect, useCallback } from "react";
 import Comments from "@/components/Comments";
 import CommentsCard from "@components/CommentsCard";
@@ -10,10 +10,10 @@ import { getCommentsCollectionAction } from "@store/comments/actions";
 import { App } from "antd";
 import { createCommentsCollectionAction } from "@store/comments/actions";
 
-const metadata: Metadata = {
-  title: "Testimonials",
-  description: "Client testimonials",
-};
+// const metadata: Metadata = {
+//   title: "Testimonials",
+//   description: "Client testimonials",
+// };
 
 export default function TestimonialsPage() {
   const dispatch = useAppDispatch();
