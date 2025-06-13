@@ -3,12 +3,7 @@ import type { Metadata } from "next";
 
 import { Inter } from "next/font/google";
 
-import {
-  faGithubSquare,
-  faLinkedin,
-  faSquareBehance,
-  faYoutubeSquare,
-} from "@fortawesome/free-brands-svg-icons";
+import { faGithubSquare, faLinkedin, faSquareBehance, faYoutubeSquare } from "@fortawesome/free-brands-svg-icons";
 import { faFacebookSquare } from "@fortawesome/free-brands-svg-icons/faFacebookSquare";
 import Link from "next/link";
 
@@ -38,60 +33,20 @@ export default function ContactPage() {
                   <p>If you would like to get into contact with me.</p>
                 </div>
                 <div className="flex gap-6 justify-center py-6 animate__animated animate__fadeInDown">
-                  <Link
-                    href="https://github.com/TameshwarNirmalkar"
-                    className="shadow-amber-100 shadow-2xl"
-                  >
-                    <FontAwesomeIcon
-                      icon={faGithubSquare}
-                      size="2xl"
-                      color="white"
-                      style={{ fontSize: 100 }}
-                    />
+                  <Link href="https://github.com/TameshwarNirmalkar" className="shadow-amber-100 shadow-2xl">
+                    <FontAwesomeIcon icon={faGithubSquare} size="2xl" color="white" style={{ fontSize: 100 }} />
                   </Link>
-                  <Link
-                    href="https://www.linkedin.com/in/tameshwar-nirmalkar-a073011b/"
-                    className="shadow-cyan-300 shadow-2xl"
-                  >
-                    <FontAwesomeIcon
-                      icon={faLinkedin}
-                      size="2xl"
-                      color="cyan"
-                      style={{ fontSize: 100 }}
-                    />
+                  <Link href="https://www.linkedin.com/in/tameshwar" className="shadow-cyan-300 shadow-2xl">
+                    <FontAwesomeIcon icon={faLinkedin} size="2xl" color="cyan" style={{ fontSize: 100 }} />
                   </Link>
-                  <Link
-                    href="https://www.behance.net/tameshwar"
-                    className="shadow-blue-600 shadow-2xl"
-                  >
-                    <FontAwesomeIcon
-                      icon={faSquareBehance}
-                      size="2xl"
-                      color="blue"
-                      style={{ fontSize: 100 }}
-                    />
+                  <Link href="https://www.behance.net/tameshwar" className="shadow-blue-600 shadow-2xl">
+                    <FontAwesomeIcon icon={faSquareBehance} size="2xl" color="blue" style={{ fontSize: 100 }} />
                   </Link>
-                  <Link
-                    href="https://www.youtube.com/tameshwar"
-                    className="shadow-red-600 shadow-2xl"
-                  >
-                    <FontAwesomeIcon
-                      icon={faYoutubeSquare}
-                      size="2xl"
-                      color="#cc0000"
-                      style={{ fontSize: 100 }}
-                    />
+                  <Link href="https://www.youtube.com/tameshwar" className="shadow-red-600 shadow-2xl">
+                    <FontAwesomeIcon icon={faYoutubeSquare} size="2xl" color="#cc0000" style={{ fontSize: 100 }} />
                   </Link>
-                  <Link
-                    href="https://www.facebook.com/tameshwar"
-                    className="shadow-blue-700 shadow-2xl"
-                  >
-                    <FontAwesomeIcon
-                      icon={faFacebookSquare}
-                      size="2xl"
-                      color="#1d48d2"
-                      style={{ fontSize: 100 }}
-                    />
+                  <Link href="https://www.facebook.com/tameshwar" className="shadow-blue-700 shadow-2xl">
+                    <FontAwesomeIcon icon={faFacebookSquare} size="2xl" color="#1d48d2" style={{ fontSize: 100 }} />
                   </Link>
                 </div>
               </div>
