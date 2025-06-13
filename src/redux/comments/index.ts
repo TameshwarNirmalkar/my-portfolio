@@ -16,7 +16,7 @@ interface CommentsStateI {
 
 const commentsAdapter = createEntityAdapter<CommentsCollectionI, EntityId>({
   selectId: (comment: CommentsCollectionI) => comment._id,
-  sortComparer: (a: CommentsCollectionI, b: CommentsCollectionI) => a.email.localeCompare(b.email),
+  sortComparer: (a: CommentsCollectionI, b: CommentsCollectionI) => a.client_name.localeCompare(b.client_name),
 });
 
 const commentSlice = createSlice({
