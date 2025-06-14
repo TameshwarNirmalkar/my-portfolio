@@ -32,6 +32,14 @@ const themeConfig: ThemeConfig = {
     // colorTextLabel: "#ffffff",
   },
   components: {
+    Carousel: {
+      arrowSize: 40,
+      arrowOffset: -50,
+      dotGap: 10,
+      dotHeight: 8,
+      dotWidth: 50,
+      dotActiveWidth: 50,
+    },
     Button: {
       algorithm: true,
       defaultActiveBorderColor: "rgb(250,173,20)",
