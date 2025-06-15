@@ -14,7 +14,7 @@ export default function Services() {
       <div className="container  m-4">
         <div className="max-w-4xl w-full mx-auto grid gap-4 grid-cols-1">
           <h1 className="text-2xl text-gray-300">Services</h1>
-          <div className="flex flex-col-2 gap-6 top-0">
+          <div className="flex flex-col-2 gap-6 top-0 animate__animated animate__fadeInUp">
             <Image
               src={"/assets/images/ai-image1.jpeg"}
               width={100}
@@ -52,7 +52,7 @@ export default function Services() {
               description={"React, Redux, Node, Angular etc."}
               amount_per_hour={15}
               card_image={"/assets/images/ai_image_2.jpeg"}
-              css_class_name="animate__animated animate__flipInY"
+              css_class_name="animate__animated animate__flipInY animate__delay-1s"
             />
             <CardInfo
               ratings={4.5}
@@ -60,7 +60,7 @@ export default function Services() {
               description={"React Native."}
               amount_per_hour={15}
               card_image={"/assets/images/ai-mobile-4.jpeg"}
-              css_class_name="animate__animated animate__flipInY"
+              css_class_name="animate__animated animate__flipInY animate__delay-2s"
             />
 
             <CardInfo
@@ -69,7 +69,7 @@ export default function Services() {
               description={"React, Redux, Node, Angular etc."}
               amount_per_hour={15}
               card_image={"/assets/images/support.jpeg"}
-              css_class_name="animate__animated animate__flipInY"
+              css_class_name="animate__animated animate__flipInY animate__delay-3s"
             />
 
             <CardInfo
@@ -78,7 +78,7 @@ export default function Services() {
               description={"Web3, Metamask, Ethereum, Binance etc."}
               amount_per_hour={30}
               card_image={"/assets/images/ai_image_5.jpg"}
-              css_class_name="animate__animated animate__flipInY"
+              css_class_name="animate__animated animate__flipInY animate__delay-4s"
             />
           </div>
         </div>
