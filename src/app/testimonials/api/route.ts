@@ -7,7 +7,7 @@ import { NextRequest, NextResponse } from "next/server";
 export async function GET() {
   try {
     await connectMongoDB();
-    const comments = await commentsModel.find();
+    const comments = await commentsModel.find().limit(3).sort({ time: -1 });
     return NextResponse.json({ comments, success: true }, { status: 200 });
   } catch (error: any) {
     return NextResponse.json({ message: error.toString(), code: error.code, success: false }, { status: 403 });
