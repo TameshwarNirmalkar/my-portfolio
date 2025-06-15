@@ -7,6 +7,7 @@ interface CardInfoI {
   description: string;
   amount_per_hour: number;
   card_image: string;
+  css_class_name?: string;
 }
 
 const CardInfo: React.FC<CardInfoI> = ({
@@ -15,9 +16,10 @@ const CardInfo: React.FC<CardInfoI> = ({
   description,
   amount_per_hour,
   card_image,
+  css_class_name = "",
 }) => {
   return (
-    <div className="p-4 bg-gray-800 border-gray-800 shadow-md hover:shodow-lg rounded-2xl">
+    <div className={`p-4 bg-gray-800 border-gray-800 shadow-md hover:shodow-lg rounded-2xl ${css_class_name}`}>
       <div className="flex-none lg:flex">
         <div className="h-full w-full lg:h-30 lg:w-30 lg:mb-0 mb-3">
           <Image
@@ -42,9 +44,7 @@ const CardInfo: React.FC<CardInfoI> = ({
               <p className="font-normal text-gray-500">{ratings}</p>
             </div>
             <div className="flex items-center  justify-between min-w-0">
-              <h2 className="mr-auto   text-base text-gray-100 font-medium truncate">
-                {label}
-              </h2>
+              <h2 className="mr-auto   text-base text-gray-100 font-medium truncate">{label}</h2>
               <div className="flex items-center font-medium text-gray-300 ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
