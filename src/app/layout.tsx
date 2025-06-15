@@ -10,6 +10,7 @@ import themeConfig from "@theme/themeConfig";
 import { StoreProviders } from "../redux/providers";
 import HeaderComponent from "@/components/Header";
 //import Footer from "@/components/Footer";
+import ProgressBarProviders from "@components/ProgressBarProvider";
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
@@ -29,17 +30,19 @@ export default function RootLayout({
   return (
     <html lang="en" className={geistMono.className}>
       {/* ${geistSans.variable} ${geistMono.variable} */}
-      <body className={`antialiased bg-gray-900`}>
+      <body className="bg-gray-900">
         <StoreProviders>
-          <AntdRegistry>
-            <ConfigProvider theme={themeConfig} button={{ autoInsertSpace: false }}>
-              <App>
-                <HeaderComponent />
-                {children}
-                {/* <Footer /> */}
-              </App>
-            </ConfigProvider>
-          </AntdRegistry>
+          <ProgressBarProviders>
+            <AntdRegistry>
+              <ConfigProvider theme={themeConfig} button={{ autoInsertSpace: false }}>
+                <App>
+                  <HeaderComponent />
+                  {children}
+                  {/* <Footer /> */}
+                </App>
+              </ConfigProvider>
+            </AntdRegistry>
+          </ProgressBarProviders>
         </StoreProviders>
       </body>
     </html>
