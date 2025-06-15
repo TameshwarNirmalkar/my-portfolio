@@ -12,7 +12,7 @@ export default function PricePage() {
                 <div className="shadow-gray-400 rounded-xl bg-gray-800">
                   <div className="p-4">
                     <h5 className="text-orange-400 text-2xl text-center">Hourly Basis</h5>
-                    <h1 className=" text-gray-200 py-3 text-center">
+                    <h1 className=" text-gray-200 py-3 text-center animate__animated animate__wobble">
                       <span className="text-2xl">$</span>
                       <span className="text-5xl">
                         15<span className="text-xl">/hr</span>
@@ -20,10 +20,14 @@ export default function PricePage() {
                     </h1>
                     <div className="p-4">
                       <ul className="text-gray-400 list-disc list-outside">
-                        <li>Carefully crafted components</li>
-                        <li>Amazing page examples</li>
-                        <li>Super friendly support team</li>
-                        <li>Awesome Support</li>
+                        <li className="animate__animated animate__fadeInRight">Carefully crafted components</li>
+                        <li className="animate__animated animate__fadeInRight animate__delay-1s">
+                          Amazing page examples
+                        </li>
+                        <li className="animate__animated animate__fadeInRight animate__delay-2s">
+                          Super friendly support team
+                        </li>
+                        <li className="animate__animated animate__fadeInRight animate__delay-3s">Awesome Support</li>
                       </ul>
                     </div>
                     {/* <FontAwesomeIcon icon={faUser} color="red" />
@@ -35,7 +39,7 @@ export default function PricePage() {
                 <div className="shadow-gray-400 rounded-xl bg-gray-800">
                   <div className="p-4">
                     <h5 className="text-orange-400 text-2xl text-center">Part Time</h5>
-                    <h1 className=" text-gray-200 py-3 text-center">
+                    <h1 className=" text-gray-200 py-3 text-center animate__animated animate__wobble">
                       <span className="text-2xl">$</span>
                       <span className="text-5xl">
                         56<span className="text-xl">/4hr</span>
@@ -43,10 +47,14 @@ export default function PricePage() {
                     </h1>
                     <div className="p-4">
                       <ul className="text-gray-400 list-disc list-outside">
-                        <li>Carefully crafted components</li>
-                        <li>Amazing page examples</li>
-                        <li>Super friendly support team</li>
-                        <li>Awesome Support</li>
+                        <li className="animate__animated animate__fadeInRight">Carefully crafted components</li>
+                        <li className="animate__animated animate__fadeInRight animate__delay-1s">
+                          Amazing page examples
+                        </li>
+                        <li className="animate__animated animate__fadeInRight animate__delay-2s">
+                          Super friendly support team
+                        </li>
+                        <li className="animate__animated animate__fadeInRight animate__delay-3s">Awesome Support</li>
                       </ul>
                     </div>
                     {/* <FontAwesomeIcon icon={faUser} color="red" />
@@ -58,7 +66,7 @@ export default function PricePage() {
                 <div className="shadow-gray-400 rounded-xl bg-gray-800">
                   <div className="p-4">
                     <h5 className="text-orange-400 text-2xl text-center">Permanent</h5>
-                    <h1 className=" text-gray-200 py-3 text-center">
+                    <h1 className=" text-gray-200 py-3 text-center animate__animated animate__wobble">
                       <span className="text-2xl">$</span>
                       <span className="text-5xl">
                         3000<span className="text-xl">/Month</span>
@@ -66,10 +74,14 @@ export default function PricePage() {
                     </h1>
                     <div className="p-4">
                       <ul className="text-gray-400 list-disc list-outside">
-                        <li>Carefully crafted components</li>
-                        <li>Amazing page examples</li>
-                        <li>Super friendly support team</li>
-                        <li>Awesome Support</li>
+                        <li className="animate__animated animate__fadeInRight">Carefully crafted components</li>
+                        <li className="animate__animated animate__fadeInRight animate__delay-1s">
+                          Amazing page examples
+                        </li>
+                        <li className="animate__animated animate__fadeInRight animate__delay-2s">
+                          Super friendly support team
+                        </li>
+                        <li className="animate__animated animate__fadeInRight animate__delay-3s">Awesome Support</li>
                       </ul>
                     </div>
                     {/* <FontAwesomeIcon icon={faUser} color="red" />
