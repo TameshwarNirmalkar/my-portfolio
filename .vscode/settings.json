@@ -3,5 +3,22 @@
     "eslint.codeActionsOnSave.rules": null,
     "prettier.printWidth": 120,
     "terminal.integrated.fontFamily": "MesloLGS NF",
-    "editor.fontSize": 14
+    "editor.fontSize": 14,
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "MySql Local",
+            "database": "demo",
+            "username": "root",
+            "password": "admin123",
+            "connectionTimeout": 30
+        }
+    ]
 }

@@ -1,0 +1,3 @@
+--DELETE FROM user WHERE UserID=3;
+---- INSERT INTO user (FirstName, LastName, UserEmail) values ('Tameshwar', 'Nirmalkar', 'tamesh@gmail.com');
+---- SELECT * FROM user;
